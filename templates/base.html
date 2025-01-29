@@ -1,0 +1,219 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EventCon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="logo">
+                                    <a href="#">
+                                        <img src="{% static 'img/banner/logo.jpg' %}" alt="Logo" style="height:100px;width:90px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="{% url 'landing' %}">home</a></li>
+                                            <li><a href="{% url 'landing' %}#sponsors">Sponsors</a></li>
+                                            
+                                            <li><a>Menu<i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#about">about</a></li>
+                                                    <li><a href="{% url 'events' %}">Programmes</a></li>
+                                                    <li><a href="#venue">Venue</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="single-blog.html">single-blog</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#location_info">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="buy_tkt">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR7uocE8A3YbwwApxvv2ahAyvqJySb1-kmKP8wu_TQKJCUdA/viewform">Register Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+       <!-- slider_area_start -->
+       <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                <img src="{% static 'img/shape/shape_1.svg' %}" alt="">
+                            </div>
+                            <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">
+                                <img src="{% static 'img/shape/shape_2.svg' %}" alt="">
+                            </div>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">12 Feb, 2025</span>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">JB Fest  2025</h3>
+                            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">Jai Bharath College of Management & Technology, Arakkappady, Perumbavoor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+     {% block content %}
+     {% endblock %}
+
+     <!-- footer_start  -->
+    <footer class="footer">
+      <div class="footer_top">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-6 col-md-8">
+                      <div class="footer_widget">
+                          <div class="address_details text-center" id="venue">
+                              <h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">12 Feb, 2025</h4>
+                              <h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">Jai Bharath Group of Institutions, Arakkappady, Perumbavoor, Kochi</h3>
+                              <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">The event regularly attracts a diverse range of attendees from around multiple departments</p>
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeR7uocE8A3YbwwApxvv2ahAyvqJySb1-kmKP8wu_TQKJCUdA/viewform" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Confirm your Participation</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- map_area_start  -->
+    <div class="row">
+        <div class="col-md-6">
+            <div id="map" style="height: 600px; position: relative; overflow: hidden;margin-left:120px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14647.474892013293!2d76.44844274030078!3d10.05432149500756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e1fc50dcefd9%3A0x49fce9b2cf23f181!2sJai%20Bharath%20College%20of%20Management%20and%20Engineering%20Technology!5e0!3m2!1sen!2sin!4v1738126847353!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" id="location_info">
+                <h3>JB Fest 2025</h3>
+                <div class="info_wrap">
+                    <div class="single_info">
+                        <span>Vanue:</span>
+                        <p>Jai Bharath Group of Institutions , Arakkappady, Perumbavoor, Ernakulam, Kerala, India</p>
+                    </div>
+                    <div class="single_info">
+                        <span>Phone:</span>
+                        <p>+10 (88) 267 368 283</p>
+                    </div>
+                    <div class="single_info">
+                        <span>Email:</span>
+                        <p>contact@jbfest2025.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        
+    <!-- map_area_end  -->
+      <div class="copy-right_text">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12">
+                      <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved &copy; SkillsMerge Learning Hub, Edappally, Kochi <i class="fa fa-heart-o" aria-hidden="true"></i> 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- footer_end  -->
+
+  <!-- JS here -->
+  <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+  <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'js/ajax-form.js' %}"></script>
+  <script src="{% static 'js/waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'js/scrollIt.js' %}"></script>
+  <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/gijgo.min.js' %}"></script>
+  <script src="{% static 'js/nice-select.min.js' %}"></script>
+  <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/tilt.jquery.js' %}"></script>
+  <script src="{% static 'js/plugins.js' %}"></script>
+
+
+
+  <!--contact js-->
+  <script src="{% static 'js/contact.js' %}"></script>
+  <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+  <script src="{% static 'js/jquery.form.js' %}"></script>
+  <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'js/mail-script.js' %}"></script>
+
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

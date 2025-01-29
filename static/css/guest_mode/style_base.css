@@ -1,0 +1,43 @@
+    body{
+        margin: 0;
+        padding:0;
+    }
+    header{
+    width: 100%;
+    position: fixed;
+    }
+
+   footer{
+    width: 100%;
+    background-color: #111;
+    color: whitesmoke;
+    font-weight: bold;
+    bottom: 0;
+    height: 5em;
+    position:fixed;
+   }
+   footer p{
+    margin-left: 36em;
+   }
+  
+   .jumbotron_base{
+    width: 100%;
+    background:linear-gradient(brown,black);;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+   }
+   .jumbotron_base h1,p{
+    margin-left: 3em;
+   }
+   .lead{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+   }
+
+   .landing_div{
+    position: relative;
+
+   }
+   
