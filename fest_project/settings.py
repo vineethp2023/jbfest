@@ -77,10 +77,8 @@ WSGI_APPLICATION = 'fest_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fest_mgmt',
-        'USER': "root",
-        'PASSWORD': ""
+        'ENGINE': 'django.db.backends.sqlite3',  # Correct engine for SQLite
+        'NAME': BASE_DIR / 'db.sqlite3',         # Default path for SQLite database
     }
 }
 
